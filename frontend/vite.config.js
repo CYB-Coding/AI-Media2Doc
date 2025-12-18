@@ -8,16 +8,6 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [vue()],
     server: {
-      // 🔥 新增：允许的域名列表（解决Blocked request错误）
-      host: '0.0.0.0', // 允许所有网络接口访问
-      allowedHosts: [
-        'frp-dad.com',           // 你的frp域名
-        'aimedia.chenyibang.com', // 你的主域名
-        'localhost',
-        '127.0.0.1',
-        '192.168.1.33'           // 你的NAS内网IP
-      ],
-      
       headers: {
         'Cross-Origin-Opener-Policy': 'same-origin',
         'Cross-Origin-Embedder-Policy': 'require-corp',
