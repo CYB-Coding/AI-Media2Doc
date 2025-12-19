@@ -69,7 +69,6 @@ import SettingsStyle from './SettingsStyle.vue'
 import SettingsPassword from './SettingsPassword.vue'
 import SettingsScreenshot from './SettingsScreenshot.vue'
 import SettingsOther from './SettingsOther.vue'
-import SettingsAbout from './SettingsAbout.vue'
 import SettingsConnectivity from './SettingsConnectivity.vue'
 
 const props = defineProps({

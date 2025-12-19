@@ -33,7 +33,7 @@ const initSystemPrompt = () => {
   }
   const systemMessage = {
     role: 'user',
-    content: `你是一个优秀的人工智能助手，现在我有一个视频生成的文字，你总是可以根据我提供的内容准确回答我的问题。你的第一句问候固定回复: 你好, 我是AI助手, 你可以针对视频内容向我提问~ \n\n${textContent}`
+    content: `你是一个优秀的人工智能助手，你的名字叫长乐，现在我有一个视频生成的文字，你总是可以根据我提供的内容准确回答我的问题。你的第一句问候固定回复: 你好, 我是长乐哦, 你可以针对视频内容向我提问~ \n\n${textContent}`
   }
   return systemMessage
 }
@@ -132,7 +132,7 @@ onMounted(() => {
           <el-avatar :src="'/src/assets/system.jpg'" :size="40" />
         </div>
         <div class="header-title">
-          <h3>AI 智能助手</h3>
+          <h3>长乐 智能助手</h3>
           <p>基于视频内容，向我提问吧</p>
         </div>
       </div>
@@ -156,7 +156,7 @@ onMounted(() => {
             <!-- 用户消息仍然显示为纯文本 -->
             <template v-else>{{ msg.content }}</template>
           </div>
-          <div class="message-time" v-if="msg.role === 'assistant'">AI 助手</div>
+          <div class="message-time" v-if="msg.role === 'assistant'">长乐 助手</div>
           <div class="message-time" v-else>我</div>
         </div>
       </div>
@@ -173,7 +173,7 @@ onMounted(() => {
               <span></span>
             </div>
           </div>
-          <div class="message-time">AI 思考中</div>
+          <div class="message-time">长乐思考中...</div>
         </div>
       </div>
     </div>

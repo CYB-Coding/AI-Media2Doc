@@ -127,7 +127,7 @@ const handleMaxTokensChange = (val) => {
   <div class="upload-section-outer">
     <div class="upload-section" :class="{ 'loading-state': ffmpegLoading }">
       <div class="welcome">
-        <div class="welcome-title">你好，我是 <span class="ai-highlight">AI 图文创作助手</span></div>
+        <div class="welcome-title">你好，我是 <span class="ai-highlight">长乐AI 图文创作助手</span></div>
         <div class="welcome-desc">上传你的视频或MP3音频，我会帮你自动转写并生成多种风格的图文内容。</div>
       </div>
       <!-- 仅在未上传文件时显示风格支持列表和acceptHint -->
